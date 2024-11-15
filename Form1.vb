@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Private Sub form_crystalReports_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        dbconn()
     End Sub
 
     Sub loadData()
