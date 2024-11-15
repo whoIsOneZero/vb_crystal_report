@@ -23,27 +23,33 @@ Partial Class form_crystalReports
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lbl_studentInfo = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.lbl_fullName = New System.Windows.Forms.Label()
-        Me.lbl_gender = New System.Windows.Forms.Label()
-        Me.lbl_unit = New System.Windows.Forms.Label()
-        Me.lbl_subject = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.lbl_address = New System.Windows.Forms.Label()
+        Me.lbl_subject = New System.Windows.Forms.Label()
+        Me.lbl_unit = New System.Windows.Forms.Label()
+        Me.lbl_gender = New System.Windows.Forms.Label()
+        Me.lbl_fullName = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.lbl_studentInfo = New System.Windows.Forms.Label()
         Me.btn_save = New System.Windows.Forms.Button()
         Me.btn_update = New System.Windows.Forms.Button()
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_loadData = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btn_search = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_countRows = New System.Windows.Forms.Label()
         Me.lbl_countRowNum = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -66,52 +72,43 @@ Partial Class form_crystalReports
         Me.Panel1.Size = New System.Drawing.Size(613, 196)
         Me.Panel1.TabIndex = 0
         '
-        'lbl_studentInfo
+        'TextBox4
         '
-        Me.lbl_studentInfo.AutoSize = True
-        Me.lbl_studentInfo.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_studentInfo.Location = New System.Drawing.Point(177, 9)
-        Me.lbl_studentInfo.Name = "lbl_studentInfo"
-        Me.lbl_studentInfo.Size = New System.Drawing.Size(327, 37)
-        Me.lbl_studentInfo.TabIndex = 1
-        Me.lbl_studentInfo.Text = "STUDENT INFORMATION" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.TextBox4.Location = New System.Drawing.Point(22, 156)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(147, 25)
+        Me.TextBox4.TabIndex = 13
         '
-        'TextBox3
+        'TextBox2
         '
-        Me.TextBox3.Location = New System.Drawing.Point(319, 28)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(260, 25)
-        Me.TextBox3.TabIndex = 2
+        Me.TextBox2.Location = New System.Drawing.Point(319, 91)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(260, 25)
+        Me.TextBox2.TabIndex = 12
         '
-        'lbl_fullName
+        'TextBox1
         '
-        Me.lbl_fullName.AutoSize = True
-        Me.lbl_fullName.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_fullName.Location = New System.Drawing.Point(19, 8)
-        Me.lbl_fullName.Name = "lbl_fullName"
-        Me.lbl_fullName.Size = New System.Drawing.Size(79, 20)
-        Me.lbl_fullName.TabIndex = 5
-        Me.lbl_fullName.Text = "Full Name"
+        Me.TextBox1.Location = New System.Drawing.Point(22, 91)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(260, 25)
+        Me.TextBox1.TabIndex = 11
         '
-        'lbl_gender
+        'TextBox6
         '
-        Me.lbl_gender.AutoSize = True
-        Me.lbl_gender.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_gender.Location = New System.Drawing.Point(19, 71)
-        Me.lbl_gender.Name = "lbl_gender"
-        Me.lbl_gender.Size = New System.Drawing.Size(59, 20)
-        Me.lbl_gender.TabIndex = 6
-        Me.lbl_gender.Text = "Gender"
+        Me.TextBox6.Location = New System.Drawing.Point(22, 28)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(260, 25)
+        Me.TextBox6.TabIndex = 10
         '
-        'lbl_unit
+        'lbl_address
         '
-        Me.lbl_unit.AutoSize = True
-        Me.lbl_unit.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_unit.Location = New System.Drawing.Point(19, 136)
-        Me.lbl_unit.Name = "lbl_unit"
-        Me.lbl_unit.Size = New System.Drawing.Size(38, 20)
-        Me.lbl_unit.TabIndex = 7
-        Me.lbl_unit.Text = "Unit"
+        Me.lbl_address.AutoSize = True
+        Me.lbl_address.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_address.Location = New System.Drawing.Point(316, 71)
+        Me.lbl_address.Name = "lbl_address"
+        Me.lbl_address.Size = New System.Drawing.Size(63, 20)
+        Me.lbl_address.TabIndex = 9
+        Me.lbl_address.Text = "Address"
         '
         'lbl_subject
         '
@@ -123,15 +120,52 @@ Partial Class form_crystalReports
         Me.lbl_subject.TabIndex = 8
         Me.lbl_subject.Text = "Subject"
         '
-        'lbl_address
+        'lbl_unit
         '
-        Me.lbl_address.AutoSize = True
-        Me.lbl_address.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_address.Location = New System.Drawing.Point(316, 71)
-        Me.lbl_address.Name = "lbl_address"
-        Me.lbl_address.Size = New System.Drawing.Size(63, 20)
-        Me.lbl_address.TabIndex = 9
-        Me.lbl_address.Text = "Address"
+        Me.lbl_unit.AutoSize = True
+        Me.lbl_unit.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_unit.Location = New System.Drawing.Point(19, 136)
+        Me.lbl_unit.Name = "lbl_unit"
+        Me.lbl_unit.Size = New System.Drawing.Size(38, 20)
+        Me.lbl_unit.TabIndex = 7
+        Me.lbl_unit.Text = "Unit"
+        '
+        'lbl_gender
+        '
+        Me.lbl_gender.AutoSize = True
+        Me.lbl_gender.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_gender.Location = New System.Drawing.Point(19, 71)
+        Me.lbl_gender.Name = "lbl_gender"
+        Me.lbl_gender.Size = New System.Drawing.Size(59, 20)
+        Me.lbl_gender.TabIndex = 6
+        Me.lbl_gender.Text = "Gender"
+        '
+        'lbl_fullName
+        '
+        Me.lbl_fullName.AutoSize = True
+        Me.lbl_fullName.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_fullName.Location = New System.Drawing.Point(19, 8)
+        Me.lbl_fullName.Name = "lbl_fullName"
+        Me.lbl_fullName.Size = New System.Drawing.Size(79, 20)
+        Me.lbl_fullName.TabIndex = 5
+        Me.lbl_fullName.Text = "Full Name"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(319, 28)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(260, 25)
+        Me.TextBox3.TabIndex = 2
+        '
+        'lbl_studentInfo
+        '
+        Me.lbl_studentInfo.AutoSize = True
+        Me.lbl_studentInfo.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_studentInfo.Location = New System.Drawing.Point(177, 9)
+        Me.lbl_studentInfo.Name = "lbl_studentInfo"
+        Me.lbl_studentInfo.Size = New System.Drawing.Size(327, 37)
+        Me.lbl_studentInfo.TabIndex = 1
+        Me.lbl_studentInfo.Text = "STUDENT INFORMATION" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'btn_save
         '
@@ -189,15 +223,6 @@ Partial Class form_crystalReports
         Me.btn_loadData.Text = "Load Data"
         Me.btn_loadData.UseVisualStyleBackColor = False
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(42, 359)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(613, 186)
-        Me.DataGridView1.TabIndex = 7
-        '
         'btn_search
         '
         Me.btn_search.BackColor = System.Drawing.Color.Blue
@@ -211,34 +236,6 @@ Partial Class form_crystalReports
         Me.btn_search.TabIndex = 8
         Me.btn_search.Text = "Search"
         Me.btn_search.UseVisualStyleBackColor = False
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(22, 28)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(260, 25)
-        Me.TextBox6.TabIndex = 10
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(22, 91)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(260, 25)
-        Me.TextBox1.TabIndex = 11
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(319, 91)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(260, 25)
-        Me.TextBox2.TabIndex = 12
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(22, 156)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(147, 25)
-        Me.TextBox4.TabIndex = 13
         '
         'TextBox5
         '
@@ -276,6 +273,62 @@ Partial Class form_crystalReports
         Me.lbl_countRowNum.Size = New System.Drawing.Size(17, 20)
         Me.lbl_countRowNum.TabIndex = 12
         Me.lbl_countRowNum.Text = "0"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        Me.DataGridView1.Location = New System.Drawing.Point(42, 359)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(613, 186)
+        Me.DataGridView1.TabIndex = 7
+        '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "#"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "Full Name"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Subject"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.HeaderText = "Gender"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'Column5
+        '
+        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column5.HeaderText = "Address"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = ""
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        Me.Column6.Text = "Print"
+        Me.Column6.UseColumnTextForButtonValue = True
         '
         'form_crystalReports
         '
@@ -320,7 +373,6 @@ Partial Class form_crystalReports
     Friend WithEvents btn_update As Button
     Friend WithEvents btn_delete As Button
     Friend WithEvents btn_loadData As Button
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btn_search As Button
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox2 As TextBox
@@ -330,4 +382,11 @@ Partial Class form_crystalReports
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl_countRows As Label
     Friend WithEvents lbl_countRowNum As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewButtonColumn
 End Class
